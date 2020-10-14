@@ -110,7 +110,7 @@ def softmax_loss_vectorized(W, X, y, reg):
     dW /= num_train
     
     loss += reg * np.sum(W*W)
-    dW += 2 * reg * 2
+    dW += 2 * reg * W
 
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
